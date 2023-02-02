@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Especiais HTML</title>
+    <style>
+        kbd {
+            border: solid 1px black;
+        }
+        code {
+            background-color: #f1f1f1;
+            color: red;
+        }
+        pre {
+            background-color: whitesmoke;
+        }
+        pre > code {
+            color: blue;
+        }
+        pre > p {
+            color: darkgreen;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <select name="browsers" id="">
+        <option value="">Selecione um navegador</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="firefox">Mozila Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+    </select>
+    <br>
+    <input list="browsers" type="search" name="search">
+    <datalist id="browsers">
+        <option value="">Selecione um navegador</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="firefox">Mozila Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+    </datalist>
+    <br><br><br>
+    <p>Para copirar essa informação pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+    <p>Para trocar o fundo de um elemento utilize o comando <code>background-color</code></p>
+    <p>Comando completo para alterar a cor de fundo</p>
+    <pre>
+        <p>//Neste momento voce aplica desta forma</p>
+        <code>
+            code {
+                background-color: #f1f1f1;
+             color: red;
+            }
+        </code>
+    </pre> 
+    <br><br><br>
+    <details>
+        <summary>Como troco a cor de fundo de um elemento no HTML?</summary>
+        <p>Para executar esta ação utilize o comando <code>background-color</code> no CSS.</p>
+    </details>
+    <br><br><br>
+    <meter max="100" min="0" value="50"></meter>
+    <progress id="progress" max="100" min="0" value="50"></progress>
+    <script>
+        var progress = document.getElementById('progress')
+        const interval = setInterval(() => {
+            progress.value += 10;
+            if (progress.value >= 100) {
+                alert('Carregamento realizado com sucesso')
+                clearInterval(interval);
+            }
+        }, 1000)
+    </script>
+</body>
+</html>

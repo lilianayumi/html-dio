@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="#" name="form" method="get" autocomplete="off" onsubmit="">
+        <label>text</label><input type="text"><br>
+        <label>number</label><input type="number" min="0" max="100" step="10"><br>
+        <label>password</label><input type="password"><br>
+        <label>range</label><input type="range" min="0" max="100" value="10"><br>
+        <label>color</label><input type="color"><br>
+        <label>email</label><input type="email"><br>
+        <label>url</label><input type="url"><br>
+        <label>date</label><input type="date"><br>
+        <label>week</label><input type="week"><br>
+        <label>month</label><input type="month"><br>
+        <label>file</label><input type="file"><br>
+        <label>hidden</label><input type="hidden"><br>
+        <label>search</label><input type="search"><br>
+        <button type="submit">enviar</button><br>
+    </form>
+
+    <form method="get">
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcao[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcao[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcao[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcao[]" value="azeitona"> + azeitona <br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim"> sim <br>
+        <input type="radio" name="borda" value="nao"> não <br>
+        <br>
+        <button type="submit">Enviar pedido</button>
+    </form>
+    <br>
+    <form onsubmit="" method="get">
+        <button type="button" onclick="alert('Cliquei aqui')">Clicável</button>
+        <button type="button" onmouseover="alert('Passei aqui')">Clicável</button>
+        <br>
+        <label>Nome:</label><input type="text"><br>
+        <label>Idade:</label><input type="number"><br>
+        <label>Senha:</label><input type="password"><br>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <form method="get">
+        <label>Nome: </label><input type="text"><br>
+        <label>Cargo: </label>
+        <select name="role">
+            <option value="">Selecione o Cargo</option>
+            <option value="analista">Analista</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+        <br>
+        <label>Assunto:</label><br>
+        <textarea name="assunto" id="" cols="30" rows="10"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
