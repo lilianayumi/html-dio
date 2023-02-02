@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OftalMed - Contato</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .contact {
+            margin-right: 30px;
+            text-align: right;
+        }
+        .contact p {
+            line-height: 10px;
+        }
+        a {
+            line-height: 30px;
+        }
+        .header img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .content {
+            display: flex;
+        }
+        .content1{
+            width: 50%;
+        }
+        .content1 p {
+            line-height: 20px;
+            margin: 3px 0px 3px 0px;
+        }
+        .content2 {
+            margin-top: 65px;
+        }
+        label {
+            width: 100px;
+            text-align: left;
+            display: inline-block;
+            padding-right: 5px;
+            margin: 3px 0px 3px 0px;
+        }
+        textarea {
+            margin: 3px 0px 3px 0px;
+        }
+        fieldset {
+            margin: 5px;
+            border-radius: 10px;
+            border-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="pagina-principal.html">Página Principal</a></li>
+                <li><a href="sobre-a-clinica.html">Sobre a Clínica</a></li>
+                <li><a href="horario-de-atendimento.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="header">
+                <img src="contato.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="content1">
+                    <h1>Contato</h1>
+                    <p><strong>Telefone: </strong>(12)3456-7890</p>
+                    <p><strong>E-mail: </strong>clinica.oftalmed@email.com.br</p>
+                    <p><strong>Endereço: </strong>Rua São João nº123, Maringá - PR</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234336.75787640404!2d-52.10812601840163!3d-23.405870717671426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0d9132b0bf9%3A0x49a4970763bcf0e8!2sMaring%C3%A1%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1674312382655!5m2!1spt-BR!2sbr" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="content2">
+                    <fieldset>
+                        <form name="contact" method="post" onsubmit="alert('Formulário enviado')" title="Formulário para contato">
+                            <label>Nome: </label><input type="text" name="name" placeholder="Nome completo"><br>
+                            <label>E-mail: </label><input type="email" name="email" placeholder="ex: meuemail@gmail.com"><br>
+                            <label>Assunto: </label>
+                            <select name="subject">
+                                <option value="">Selecione assunto</option>
+                                <option value="agendamento">Agendar atendimento</option>
+                                <option value="feedback">Reclamações</option>
+                                <option value="outro">Outro</option>
+                            </select><br>
+                            <label>Mensagem: </label><textarea name="message" cols="40" rows="6" placeholder="Digite sua mensagem"></textarea><br>
+                            <button type="reset" title="Limpar formulário">Limpar</button>
+                            <button type="submit" title="Enviar formulário">Enviar</button>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="footer">
+                <img src="logo.png" title="Logotipo" alt="Logotipo da OftalMed - Clínica Médica Oftalmológica" width="150px" align="left">
+                <div class="contact">
+                    <h1>Informações de contato</h1>
+                    <p><strong>Telefone: </strong>(12)3456-7890</p>
+                    <p><strong>E-mail: </strong>clinica.oftalmed@email.com.br</p>
+                    <p><strong>Endereço: </strong>Rua São João nº123, Maringá - PR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
